@@ -85,7 +85,7 @@ CREATE TABLE "diagnostic_test"(
     FOREIGN KEY "unique_patient_id" REFERENCES "patients"("unique_patient_id"),
     FOREIGN KEY "technician_employee_id" REFERENCES "current_employees"("unique_employee_id"),
     FOREIGN KEY "requesting_physician_id" REFERENCES "current_employees"("unique_employee_id"),
-    FOREIGN KEY "recommeneded_surgery" REFERENCES "surgery"("name")
+    FOREIGN KEY "recommeneded_surgery" REFERENCES "surgery"("name"),
     FOREIGN KEY "secondary_recommeneded_surgery" REFERENCES "surgery"("name")
 );
 
@@ -113,7 +113,7 @@ CREATE TABLE "appointments" (
     FOREIGN KEY "physician_employee_id" REFERENCES "current_employees"("unique_employee_id"),
     FOREIGN KEY "nurse_employee_id" REFERENCES "current_employees"("unique_employee_id"),
     FOREIGN KEY "recommended_test_id" REFERENCES "diagnostic_test"("unique_test_id"),
-    FOREIGN KEY "recommended_test" REFERENCES "diagnostic_test"("type")
+    FOREIGN KEY "recommended_test" REFERENCES "diagnostic_test"("type"),
     FOREIGN KEY "secondary_recommended_test_id" REFERENCES "diagnostic_test"("unique_test_id"),
     FOREIGN KEY "secondary_recommended_test" REFERENCES "diagnostic_test"("type")
 );
