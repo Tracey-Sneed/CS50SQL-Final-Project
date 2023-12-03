@@ -1,14 +1,14 @@
 # CS50SQL-Final-Project
 Tracey's CS50SQL Final Project
 
-![North Suburban Hospital](North Suburban Hospital.png)
+![North Suburban Hospital](title.png)
 
 
 Video overview: https://youtu.be/Sq8dK6YhrOg
 
 ## Scope
 
-This database is database that is designed to be a patient tracking system for the fictional North Suburban hospital.
+This database is designed to be a patient tracking system for the fictional North Suburban hospital.
 The database includes support for patient admission and discharge (by using insert and delete), and other functions necessary for the operations of the hospital. The databases' scope includes:
 
 * Patient: unique patient identifying information, room number and health information.
