@@ -1,10 +1,12 @@
 --Typical SQL queries users may run on the database
 
---query to search all surgeries that are elective
+--query to select all elective surgeries
 SELECT * FROM "surgeries" WHERE "elective" IS TRUE;
 
+--a query to gather all personnel who may be a nurse
 SELECT * FROM "employees" WHERE "job" LIKE "Nurse";
 
+--a query to select where a patient has had an MRI or CT scan scheduled
 SELECT * FROM "diagnostic_test" WHERE "type" LIKE "MRI" OR "type" LIKE "CT";
 
 -- A insert to add a patient to the patients table
