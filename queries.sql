@@ -1,4 +1,4 @@
--- In this SQL file, write (and comment!) the typical SQL queries users will run on your database
+--Typical SQL queries users may run on the database
 
 --query to search all surgeries that are elective
 SELECT * FROM "surgeries" WHERE "elective" IS TRUE;
